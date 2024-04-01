@@ -11,11 +11,7 @@ If you leave your virtual machine, your database may not be saved. You can make 
 
 If you are saving your progress on freeCodeCamp.org, after getting all the tests to pass, follow the instructions above to save a dump of your database. Save the `number_guess.sql` file, as well as the final version of your `number_guess.sh` file, in a public repository and submit the URL to it on freeCodeCamp.org.
 
-### 1.1
-
-Complete the tasks below
-
-#### SUBTASKS
+### 1.1 Subtasks
 
 - Create a `number_guessing_game` folder in the `project` folder for your program
 - Create `number_guess.sh` in your `number_guessing_game` folder and give it executable permissions
