@@ -1,5 +1,5 @@
 # fCC Certifications | Relational Database Developer |  Number Guessing Game Project
-For this project, I needed to use Bash scripting, PostgreSQL, and Git to create a number guessing game that runs in the terminal and saves user information.
+For this project, I have used Bash scripting, PostgreSQL, and Git to create a number guessing game that runs in the terminal and saves user information.
 
 ## Completed User Stories and Followed Instructions
 
