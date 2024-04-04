@@ -1,17 +1,12 @@
-# Number Guessing Game
+# fCC Certifications | Relational Database Developer |  Number Guessing Game Project
+For this project, I needed to use Bash scripting, PostgreSQL, and Git to create a number guessing game that runs in the terminal and saves user information.
 
-> Welcome! Are you ready to build a random number guessing game?
+## Completed User Stories and Followed Instructions
 
-## 1. Instructions
+To complete this project, I created a `number_guess` database to hold the information suggested in the user stories, and wrote a script that generates a random number between 1 and 1000 for users to guess. My database/script solves exactly all that is described in all the user stories below. After getting all the tests to pass, I have saved a copy of my [database dump file 'number_guess.sql'](https://github.com/Rami24t/Relational-Database_Number-Guessing-Game/blob/main/number_guess.sql), as well as of, my solution's [bash script file number_guess.sh](https://github.com/Rami24t/Relational-Database_Number-Guessing-Game/blob/main/number_guess.sh) into this public repository. Additionaly, I've also created a refractored and refined version of the final script solution and added it here.
 
-To complete this project, you need to write a script that generates a random number between 1 and 1000 for users to guess. Create a `number_guess` database to hold the information suggested in the user stories. Connect to the interactive psql shell with `psql --username=freecodecamp --dbname=postgres` to create the database. In your script, you can create a `PSQL` variable for querying the database like this: `PSQL="psql --username=freecodecamp --dbname=<database_name> -t --no-align -c"`. Your script should only ask for input from the user to get the username and to take guesses. Your script should output exactly what is described in the user storied below, and nothing extra. The tests will add users to your database when the script has that ability, feel free to delete those. Some script related user stories may not pass until the script is completely working. Don't forget to commit your work frequently.
 
-**Notes:**
-If you leave your virtual machine, your database may not be saved. You can make a dump of it by entering `pg_dump -cC --inserts -U freecodecamp number_guess > number_guess.sql` in a bash terminal (not the psql one). It will save the commands to rebuild your database in `number_guess.sql`. The file will be located where the command was entered. If it's anything inside the `project` folder, the file will be saved in the VM. You can rebuild the database by entering `psql -U postgres < number_guess.sql` in a terminal where the `.sql` file is.
-
-If you are saving your progress on freeCodeCamp.org, after getting all the tests to pass, follow the instructions above to save a dump of your database. Save the `number_guess.sql` file, as well as the final version of your `number_guess.sh` file, in a public repository and submit the URL to it on freeCodeCamp.org.
-
-### 1.1 Subtasks
+### Tasks, Subtasks and User Stories
 
 - Create a `number_guessing_game` folder in the `project` folder for your program
 - Create `number_guess.sh` in your `number_guessing_game` folder and give it executable permissions
@@ -29,3 +24,4 @@ If you are saving your progress on freeCodeCamp.org, after getting all the tests
 - The message for the first commit should be `Initial commit`
 - The rest of the commit messages should start with `fix:`, `feat:`, `refactor:`, `chore:`, or `test:`
 - You should finish your project while on the `main` branch, your working tree should be clean, and you should not have any uncommitted changes
+- When you have completed the project, save all the required files into a public repository.
