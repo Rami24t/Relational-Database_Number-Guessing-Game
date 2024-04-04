@@ -90,23 +90,21 @@ ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.u
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.users VALUES (1, 'user_1712006802462', 0, 2147483647);
-INSERT INTO public.users VALUES (2, 'user_1712006802461', 0, 2147483647);
-INSERT INTO public.users VALUES (3, 'user_1712007044973', 0, 2147483647);
-INSERT INTO public.users VALUES (5, 'user_1712007044972', 0, 2147483647);
-INSERT INTO public.users VALUES (14, 'user_1712007892932', 1, 2147483647);
-INSERT INTO public.users VALUES (13, 'user_1712007892933', 4, 2147483647);
-INSERT INTO public.users VALUES (10, 'Rami', 49, 2147483647);
-INSERT INTO public.users VALUES (19, 'user_1712012924879', 1, 2147483647);
-INSERT INTO public.users VALUES (18, 'user_1712012924880', 4, 2147483647);
-INSERT INTO public.users VALUES (17, 'rAMI', 3, 2147483647);
+INSERT INTO public.users VALUES (27, 'user_1712235714215', 1, 635);
+INSERT INTO public.users VALUES (26, 'user_1712235714216', 4, 134);
+INSERT INTO public.users VALUES (24, 'LEO', 18, 12);
+INSERT INTO public.users VALUES (17, 'rAMI', 4, 8);
+INSERT INTO public.users VALUES (25, 'LOE', 1, 28);
+INSERT INTO public.users VALUES (23, 'NEO', 6, 16);
+INSERT INTO public.users VALUES (22, 'Liam', 2, 12);
+INSERT INTO public.users VALUES (10, 'Rami', 52, 6);
 
 
 --
 -- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.users_user_id_seq', 19, true);
+SELECT pg_catalog.setval('public.users_user_id_seq', 27, true);
 
 
 --
