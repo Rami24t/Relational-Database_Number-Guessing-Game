@@ -16,7 +16,7 @@ function LOGIN() {
         else
             # If that username has been used before
             UPDATE_GAMES_RESULT="$($PSQL "UPDATE users SET games_played=(games_played + 1) WHERE username='$DB_USERNAME'")"
-            echo "Welcome back, $DB_USERNAME! You have played $DB_GAMES_PLAYED games, and your best game took $DB_BEST_GAME guesses."
+            echo "Welcome back, $DB_USERNAME! You have played $(($DB_GAMES_PLAYED+1)) games, and your best game took $DB_BEST_GAME guesses."
             return 1
         fi
     done
@@ -70,11 +70,11 @@ function MAIN() {
     
     PLAYGAME
     
-    if [[ USER_EXIST -eq 0 ]]
+    if [[ $USER_EXIST -eq 0 ]]
     then
         INSERT_USER_RESULT="$($PSQL "INSERT INTO users(username) VALUES('$USERNAME_INPUT')")"
     fi
-    SAVE_RESULT="$($PSQL "UPDATE users SET best_game=CASE WHEN best_game>$NUMBER_OF_GUESSES THEN $NUMBER_OF_GUESSES ELSE best_game END WHERE username='$USERNAME'")"
+    SAVE_RESULT="$($PSQL "UPDATE users SET best_game=CASE WHEN best_game>$NUMBER_OF_GUESSES THEN $NUMBER_OF_GUESSES ELSE best_game END WHERE username='$USERNAME_INPUT'")"
     #    echo $SAVE_RESULT
     echo -e "You guessed it in $NUMBER_OF_GUESSES tries. The secret number was $SECRET_NUMBER. Nice job! "
     
